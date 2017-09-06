@@ -9,7 +9,7 @@
     
 Installer le [repository](https://github.com/octower/octower) sur **tous** les environnements (local/dev/prod), cela va créer un fichier octower.phar :
 ```bash
-    curl -sS https://getoctower.org/installer | php
+curl -sS https://getoctower.org/installer | php
 ```
 
 ## Configuration
@@ -67,23 +67,23 @@ Exemple pour un site en symfony2 :
 2. Sur le serveur, initialiser la configuration :
 
 ```bash
-    php octower.phar server:init
+php octower.phar server:init
 ```
 
 ## Déploiement
     
 1. Sur le local, il faut commiter les modifications et tagguer une version puis :
 ```bash
-    php octower.phar package:generate
+php octower.phar package:generate
 ```
 
 2. Envoyer l'archive générée sur le serveur de prod puis :
 ```bash
-    php octower.phar server:package:extract nom-de-ton-archive
+php octower.phar server:package:extract nom-de-ton-archive
 ```
 
 3. Il suffit ensuite d'activer la bonne version du projet sur la production :
 ```bash
-    php octower.phar server:release:list # Liste toutes les versions avec leurs numéros.
-    php octower.phar server:release:enable numero-de-version # Active une version
+php octower.phar server:release:list # Liste toutes les versions avec leurs numéros.
+php octower.phar server:release:enable numero-de-version # Active une version
 ```
