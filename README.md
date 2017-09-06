@@ -53,8 +53,8 @@ Exemple pour un site en symfony2 :
     "remotes": {},
     "scripts": {
         "post-extract": [
-            {"command": "chmod +x bin/clean-appkernel.sh", "priority": 11}, # À titre d'exemple
-            {"command": "./bin/clean-appkernel.sh", "priority": 20}  # À titre d'exemple
+            {"command": "chmod +x bin/clean-appkernel.sh", "priority": 11},
+            {"command": "./bin/clean-appkernel.sh", "priority": 20}
         ],
         "pre-enable": [
             {"command": "rm app/cache/* -Rf", "priority": 10},
